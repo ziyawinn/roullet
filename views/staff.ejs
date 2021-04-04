@@ -1,0 +1,47 @@
+<!-- house gardner works -->
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+  	<meta charset="utf-8">
+  	<meta name="description" content="Your description goes here">
+  	<meta name="keywords" content="one, two, three">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<script src="https://kit.fontawesome.com/aa1a2a1c33.js" crossorigin="anonymous"></script>
+
+		<title>Blank Template</title>
+
+		<!-- external CSS link -->
+		<link rel="stylesheet" href="css/reset.css">
+		<link rel="stylesheet" href="css/style.css">
+	</head>
+	<body>
+		<section class="container">
+			<div id="tableWrapper" class="tableWrapper">
+			<div class="scrollAssist">
+				<table class="moodTable" style="width:100%">
+					<thead>
+						<tr class="headtr">
+							<th>Identifier</th>
+							<th>Wins:</th>
+							<th>Losses:</th>
+							<th>CasinoBank:</th>
+						</tr>
+					</thead>
+					<tbody class="tableBody">
+						<% for(var i=0; i < casinoCollection.length; i++) {%>
+              <tr>
+				<td><span><%= casinoCollection[i].userSessionId %></span></td>
+                <td><span><%= casinoCollection[i].wins %></span></td>
+                <td><span><%= casinoCollection[i].losses %></span></td>
+                <td><span>$ <%= casinoCollection[i].casinoBank %></span></td>
+              </tr>
+            <% } %>
+					</tbody>
+				</table>
+			</div>
+		</div>
+		</section>
+		
+		<script type="text/javascript" src="js/main.js"></script>
+	</body>
+</html>

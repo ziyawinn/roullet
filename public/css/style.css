@@ -1,0 +1,52 @@
+.tableWrapper{
+  /* border: 1px solid black; */
+  width: 70%;
+  position: relative;
+  margin-top: 1%;
+  height: 50%;
+  /* visibility: hidden; */
+}
+.scrollAssist{
+  overflow: auto;
+  height: 100%;;
+}
+.tableWrapper tr{
+  border-bottom: 1px solid lightgray;
+}
+.tableBody tr{
+  display: flex;
+  justify-content: space-evenly;
+  border-bottom: 1px solid black;
+}
+.tableBody td{
+  width: 100%;
+  text-align: center;
+  height: 10%;
+}
+table{
+  background-color: rgba(255, 255, 255, 0.55);
+  margin-top: 2%;
+}
+table thead th{
+  background-color: white;
+  width: 100%;
+  display: block;
+  color: black;
+}
+
+.headtr{
+  /* position: absolute; */
+  top: 0;
+  left:0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 100%;
+}
+body{
+
+  background: url('https://media.giphy.com/media/26uflBhaGt5lQsaCA/giphy.gif');
+  background-repeat: no-repeat;
+  background-size:cover;
+  align-content: center;
+}
